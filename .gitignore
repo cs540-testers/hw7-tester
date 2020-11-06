@@ -1,3 +1,8 @@
+# Special cases
+hw7_*.zip
+pokemon_stats.py
+Pokemon.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
