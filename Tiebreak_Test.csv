@@ -1,0 +1,21 @@
+#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+1,name_1,type_a_1,type_b_1,0,0,0,0,0,0,0,7,False
+2,name_2,type_a_2,type_b_2,0,0,0,0,0,0,0,3,True
+3,name_3,type_a_3,type_b_3,0,0,0,0,0,0,0,3,False
+4,name_4,type_a_4,type_b_4,0,0,0,0,0,0,0,3,True
+5,name_5,type_a_5,type_b_5,0,0,0,0,0,0,0,6,True
+6,name_6,type_a_6,type_b_6,0,0,0,0,0,0,0,3,True
+7,name_7,type_a_7,type_b_7,0,0,0,0,0,0,0,6,False
+8,name_8,type_a_8,type_b_8,0,0,0,0,0,0,0,2,True
+9,name_9,type_a_9,type_b_9,0,0,0,0,0,0,0,5,True
+10,name_10,type_a_10,type_b_10,0,0,0,0,0,0,0,6,False
+11,name_11,type_a_11,type_b_11,0,0,0,0,0,0,0,3,True
+12,name_12,type_a_12,type_b_12,0,0,0,0,0,0,0,7,False
+13,name_13,type_a_13,type_b_13,0,0,0,0,0,0,0,1,False
+14,name_14,type_a_14,type_b_14,0,0,0,0,0,0,0,7,True
+15,name_15,type_a_15,type_b_15,0,0,0,0,0,0,0,2,True
+16,name_16,type_a_16,type_b_16,0,0,0,0,0,0,0,7,False
+17,name_17,type_a_17,type_b_17,0,0,0,0,0,0,0,1,True
+18,name_18,type_a_18,type_b_18,0,0,0,0,0,0,0,7,False
+19,name_19,type_a_19,type_b_19,0,0,0,0,0,0,0,6,True
+20,name_20,type_a_20,type_b_20,0,0,0,0,0,0,0,3,False

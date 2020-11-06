@@ -3,7 +3,7 @@ Unit testing for the hierarchical clustering project for CS 540 at UW Madison.
 
 _**BACK UP YOUR CODE. WE ARE NOT RESPONSIBLE FOR DAMAGE.**_
 
-To run, download `test.py` to your working folder.
+To run, download `test.py`, `Random_Test.csv`, and `Tiebreak_Test.csv` to your working folder.
 In a terminal, run
 ```
 python3 test.py
