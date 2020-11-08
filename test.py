@@ -1,7 +1,7 @@
 __author__ = 'cs540-testers'
 __credits__ = ['Harrison Clark', 'Stephen Jasina', 'Saurabh Kulkarni',
 		'Alex Moon']
-version = 'v0.2'
+version = 'v0.3'
 
 import unittest
 import numpy as np
@@ -66,6 +66,7 @@ class TestCalculateXY(unittest.TestCase):
 				(296, 115), (334, 380), (336, 436), (270, 425), (207, 480),
 				(347, 401), (186, 305), (267, 304), (396, 184), (469, 518),
 				(414, 223)] # I'm sorry this is ugly
+
 		for x_y_pair, expected_x_y_pair in zip(x_y_pairs, expected_x_y_pairs):
 			self.assertIsInstance(x_y_pair, tuple)
 			self.assertEqual(x_y_pair, expected_x_y_pair)
@@ -73,13 +74,11 @@ class TestCalculateXY(unittest.TestCase):
 
 class TestHAC(unittest.TestCase):
 	def test_randomized(self):
-		x_y_pairs = np.array(get_x_y_pairs(random_csv_file))
-
+		x_y_pairs = get_x_y_pairs(random_csv_file)
 		computed = hac(x_y_pairs)
 
 		# hac should return an numpy array of the right shape
-		self.assertTrue(isinstance(computed, np.ndarray)
-				or isinstance(computed, np.matrix))
+		self.assertIsInstance(computed, np.ndarray)
 		self.assertEqual(np.shape(computed), (19, 4))
 
 		# The third column should be increasing
@@ -91,7 +90,7 @@ class TestHAC(unittest.TestCase):
 		self.assertTrue(np.all(np.isclose(computed, expected)))
 
 	def test_tiebreak(self):
-		x_y_pairs = np.array(get_x_y_pairs(tiebreak_csv_file))
+		x_y_pairs = get_x_y_pairs(tiebreak_csv_file)
 		computed = hac(x_y_pairs)
 		expected_cluster_sizes \
 				= [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 8, 8, 12, 20]
